@@ -1,0 +1,11 @@
+LIBS=@INCLUDES@
+INCLUDES=@LIBS@
+all:
+	gcc -g -c vpopmail_auth.c ${LIBS}
+	gcc -g -o vpopmail_auth vpopmail_auth.o ${INCLUDES}
+
+clean:
+	rm -f vpopmail_auth.o vpopmail_auth *~ 
+
+distclean: clean
+	rm -f Makefile sed.script

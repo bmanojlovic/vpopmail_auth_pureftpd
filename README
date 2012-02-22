@@ -1,0 +1,23 @@
+*START*
+README
+
+This is what you need if you want to use pureftpd for authentication
+purposes with pureftpd with any db backend in vpopmail because
+it needs vpopmail installed (suprisingly :] )
+and need user vpopmail in /etc/passwd (if vpopmail installed as it should be 
+than it will be there)
+
+anyway type:
+./configure 
+make
+
+and then copy created executable wherever you need to use it
+
+GPLed (License included)
+*END*
+
+-----------
+Be warned this is rather old code so be kind with bug reports :)
+
+-rw-r--r--   1 steki users  2020 Nov 22  2002 vpopmail_auth.c
+
